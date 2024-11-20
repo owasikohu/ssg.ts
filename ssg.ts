@@ -18,6 +18,7 @@ async function readfile (filepath) {
 }
 
 function md2html (md,filename) {
+    const name = removeExtension(filename)
     const html = marked.parse(md)
     const template = `
     <!DOCTYPE html>
@@ -29,7 +30,7 @@ function md2html (md,filename) {
     <link rel="stylesheet" href="https://page.owasikohu.com/lib/css/style.css">
     <link rel="stylesheet" href="https://page.owasikohu.com/lib/css/github.css">
     <link rel="shortcut icon" href="https://page.owasikohu.com/favicon.ico" type="image/x-icon">
-    <title>owasikohu.com - ${filename}</title>
+    <title>owasikohu.com - ${name}</title>
     </head>
     <body>
     <header id="header"><div class="header-inner"><a class="header-logo" href="https://page.owasikohu.com/"><img src="https://page.owasikohu.com/lib/img/logo.png" width="200" height="50"></a><div class="header-site-menu"><nav class="site-menu"><ul class="menu-group"><li class="menu-item"><a href="https://page.owasikohu.com/profile">/profile</a></li><li class="menu-item"><a href="https://page.owasikohu.com/blog">/blog</a></li><li class="menu-item"><a href="https://page.owasikohu.com/projects">/projects</a></li><li class="menu-item"><a href="https://page.owasikohu.com/webring">/webring</a></li><li class="menu-item"><a href="https://page.owasikohu.com/misc">/misc</a></li></ul></nav></div></div><hr></header>
@@ -43,4 +44,8 @@ function md2html (md,filename) {
 
 async function writefile (html,outoutpath) {
     await Bun.write(outoutpath, html)
+}
+
+function removeExtension(fileName) {
+    return fileName.substring(0, fileName.lastIndexOf('.')) || fileName;
 }
