@@ -25,15 +25,15 @@ function md2html (md,filename) {
     <html lang="ja">
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="https://page.owasikohu.com/lib/css/header.css">
-    <link rel="stylesheet" href="https://page.owasikohu.com/lib/css/footer.css">
-    <link rel="stylesheet" href="https://page.owasikohu.com/lib/css/style.css">
-    <link rel="stylesheet" href="https://page.owasikohu.com/lib/css/github.css">
-    <link rel="shortcut icon" href="https://page.owasikohu.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://web.owasikohu.com/lib/css/header.css">
+    <link rel="stylesheet" href="https://web.owasikohu.com/lib/css/footer.css">
+    <link rel="stylesheet" href="https://web.owasikohu.com/lib/css/style.css">
+    <link rel="stylesheet" href="https://web.owasikohu.com/lib/css/github.css">
+    <link rel="shortcut icon" href="https://web.owasikohu.com/favicon.ico" type="image/x-icon">
     <title>owasikohu.com - ${name}</title>
     </head>
     <body>
-    <header id="header"><div class="header-inner"><a class="header-logo" href="https://page.owasikohu.com/"><img src="https://page.owasikohu.com/lib/img/logo.png" width="200" height="50"></a><div class="header-site-menu"><nav class="site-menu"><ul class="menu-group"><li class="menu-item"><a href="https://page.owasikohu.com/profile">/profile</a></li><li class="menu-item"><a href="https://page.owasikohu.com/blog">/blog</a></li><li class="menu-item"><a href="https://page.owasikohu.com/projects">/projects</a></li><li class="menu-item"><a href="https://page.owasikohu.com/webring">/webring</a></li><li class="menu-item"><a href="https://page.owasikohu.com/misc">/misc</a></li></ul></nav></div></div><hr></header>
+    <header id="header"><div class="header-inner"><a class="header-logo" href="https://web.owasikohu.com/"><img src="https://web.owasikohu.com/lib/img/logo.png" width="200" height="50"></a><div class="header-site-menu"><nav class="site-menu"><ul class="menu-group"><li class="menu-item"><a href="https://web.owasikohu.com/profile">/profile</a></li><li class="menu-item"><a href="https://web.owasikohu.com/blog">/blog</a></li><li class="menu-item"><a href="https://web.owasikohu.com/webring">/webring</a></li><li class="menu-item"><a href="https://web.owasikohu.com/misc">/misc</a></li></ul></nav></div></div><hr></header>
     ${html}
     <footer id="footer"><hr><span id="copyright">Copyright (C) 2024 owasikohu. Some rights reserved.</span></footer>
     </body>
