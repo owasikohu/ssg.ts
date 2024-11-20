@@ -10,10 +10,6 @@ for await (const file of glob.scan(".")) {
     const md: string = await readfile(file)
     const html: string = md2html(md,outoutpath)
     await writefile(html,outoutpath)
-
-    console.log("filename")
-    console.log("md")
-    console.log("html")
 }
 
 async function readfile (filepath) {
